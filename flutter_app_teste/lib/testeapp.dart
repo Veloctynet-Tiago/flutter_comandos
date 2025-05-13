@@ -103,6 +103,7 @@ class _AppTesteState extends State<AppTeste> {
                       SizedBox(width: 10),
                       ElevatedButton.icon(
                         onPressed: () {
+                          // ignore: avoid_print
                           print(validarUser(loginUser.text, senhaUser.text));
 
                           if (validarUser(loginUser.text, senhaUser.text) ==
@@ -113,6 +114,7 @@ class _AppTesteState extends State<AppTeste> {
                               ),
                             );
                           } else {
+                            // ignore: avoid_print
                             print("Usuario não encontrado");
                           }
                         },
